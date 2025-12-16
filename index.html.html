@@ -240,9 +240,12 @@
             transform: translateY(-3px);
         }
 
-        .client-logo-svg {
-            width: 100%;
+        .client-logo-img {
+            max-width: 100%;
+            max-height: 70px;
+            width: auto;
             height: auto;
+            object-fit: contain;
         }
 
         /* ABOUT SECTION */
@@ -585,29 +588,22 @@
             
             <div class="clients-grid">
                 <div class="client-logo-wrapper">
-                    <svg viewBox="0 0 200 80" class="client-logo-svg">
-                        <text x="100" y="45" text-anchor="middle" font-size="16" font-weight="500" fill="#6b6b6b">Andorra Turisme</text>
-                    </svg>
+                    <img src="images/Andorra-Turisme.jpg" alt="Andorra Turisme" class="client-logo-img">
                 </div>
                 <div class="client-logo-wrapper">
-                    <svg viewBox="0 0 200 80" class="client-logo-svg">
-                        <text x="100" y="45" text-anchor="middle" font-size="16" font-weight="500" fill="#6b6b6b">Diario d'Andorra</text>
-                    </svg>
+                    <img src="images/Diario d'Andorra.png" alt="Diario d'Andorra" class="client-logo-img">
                 </div>
                 <div class="client-logo-wrapper">
-                    <svg viewBox="0 0 200 80" class="client-logo-svg">
-                        <text x="100" y="45" text-anchor="middle" font-size="16" font-weight="500" fill="#6b6b6b">PuntoQPack</text>
-                    </svg>
+                    <img src="images/PuntoQPack.jpg" alt="PuntoQPack" class="client-logo-img">
                 </div>
                 <div class="client-logo-wrapper">
-                    <svg viewBox="0 0 200 80" class="client-logo-svg">
-                        <text x="100" y="45" text-anchor="middle" font-size="16" font-weight="500" fill="#6b6b6b">Udon</text>
-                    </svg>
+                    <img src="images/Udon.webp" alt="Udon" class="client-logo-img">
                 </div>
                 <div class="client-logo-wrapper">
-                    <svg viewBox="0 0 200 80" class="client-logo-svg">
-                        <text x="100" y="45" text-anchor="middle" font-size="16" font-weight="500" fill="#6b6b6b">Grupo Gomur</text>
-                    </svg>
+                    <img src="images/Grupo Gomur.jpg" alt="Grupo Gomur" class="client-logo-img">
+                </div>
+                <div class="client-logo-wrapper">
+                    <img src="images/Grupo Premium.jpg" alt="Grupo Premium" class="client-logo-img">
                 </div>
             </div>
         </div>
@@ -697,4 +693,5 @@
         });
     </script>
 </body>
+
 </html>
