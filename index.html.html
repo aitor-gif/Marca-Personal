@@ -274,6 +274,28 @@
             font-weight: 500;
         }
 
+        .about-content-wrapper {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            flex-shrink: 0;
+        }
+
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
         /* CONTACT SECTION */
         .contact {
             padding: 5rem 2rem;
@@ -443,6 +465,26 @@
             font-size: 0.95rem;
         }
 
+        .experience-image-container {
+            margin: 3rem auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .experience-img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .experience-caption {
+            margin-top: 1rem;
+            color: #6b6b6b;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
         @media (max-width: 768px) {
             .hero {
                 min-height: 80vh;
@@ -480,6 +522,16 @@
 
             .about {
                 padding: 3rem 1.5rem;
+            }
+
+            .about-content-wrapper {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .profile-img {
+                width: 200px;
+                height: 200px;
             }
 
             .contact {
@@ -522,21 +574,27 @@
         </div>
     </section>
 
-    <!-- ABOUT -->
+   <!-- ABOUT -->
     <section class="about" id="sobre-mi">
         <div class="about-container">
             <h2 class="section-title">Sobre mí</h2>
             
-            <div class="about-content">
-                <p>
-                    Soy consultor especializado en <span class="about-highlight">Inteligencia Artificial aplicada a empresa</span>, con una misión clara: ayudar a profesionales y organizaciones a aprovechar el potencial de la IA para transformar su forma de trabajar.
-                </p>
-                <p>
-                    Con más de <span class="about-highlight">10.000 personas formadas</span>, he desarrollado programas de capacitación y consultoría para autónomos, pymes y grandes empresas, adaptando cada solución a las necesidades específicas de cada cliente.
-                </p>
-                <p>
-                    Mi enfoque combina conocimiento técnico con aplicación práctica, transformando conceptos complejos en un lenguaje accesible y ameno. Garantizo que cada formación o auditoría se traduzca en resultados medibles y mejoras reales en productividad y eficiencia.
-                </p>
+            <div class="about-content-wrapper">
+                <div class="about-image">
+                    <img src="images/Yo perfil.jpeg" alt="Aitor Barinagarrementeria" class="profile-img">
+                </div>
+                
+                <div class="about-content">
+                    <p>
+                        Soy consultor especializado en <span class="about-highlight">Inteligencia Artificial aplicada a empresa</span>, con una misión clara: ayudar a profesionales y organizaciones a aprovechar el potencial de la IA para transformar su forma de trabajar.
+                    </p>
+                    <p>
+                        Con más de <span class="about-highlight">10.000 personas formadas</span>, he desarrollado programas de capacitación y consultoría para autónomos, pymes y grandes empresas, adaptando cada solución a las necesidades específicas de cada cliente.
+                    </p>
+                    <p>
+                        Mi enfoque combina conocimiento técnico con aplicación práctica, transformando conceptos complejos en un lenguaje accesible y ameno. Garantizo que cada formación o auditoría se traduzca en resultados medibles y mejoras reales en productividad y eficiencia.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -608,7 +666,7 @@
         </div>
     </section>
 
-    <!-- EXPERIENCE -->
+   <!-- EXPERIENCE -->
     <section class="experience">
         <div class="experience-container">
             <h2 class="section-title">Experiencia que impulsa resultados</h2>
@@ -616,6 +674,11 @@
             <p class="experience-intro">
                 He tenido el privilegio de trabajar con organizaciones de todos los tamaños, adaptando soluciones de IA a las necesidades específicas de cada cliente.
             </p>
+
+            <div class="experience-image-container">
+                <img src="images/Foto en Gomur.jpeg" alt="Aitor dando formación" class="experience-img">
+                <p class="experience-caption">Formación en IA para Grupo Gomur</p>
+            </div>
 
             <div class="experience-cards">
                 <div class="experience-card">
@@ -635,7 +698,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- CONTACT -->
     <section class="contact" id="contacto">
         <div class="contact-container">
@@ -694,6 +757,7 @@
 </body>
 
 </html>
+
 
 
 
