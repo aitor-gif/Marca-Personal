@@ -111,15 +111,23 @@
             font-weight: 500;
         }
 
+        .stats-container {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
         .stats {
             display: inline-block;
-            margin: 2rem 0;
             padding: 1.5rem 2.5rem;
             background-color: #fff;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            min-width: 200px;
+            text-align: center;
         }
-
         .stats-number {
             font-size: clamp(2.5rem, 5vw, 3.5rem);
             font-weight: 600;
@@ -567,11 +575,17 @@
                 Consultor especializado en <span class="highlight">Inteligencia Artificial</span> aplicada a empresa y productividad profesional
             </p>
             
-            <div class="stats">
-                <span class="stats-number">+10.000</span>
-                <span class="stats-label">Personas formadas en IA</span>
+           <div class="stats-container">
+                <div class="stats">
+                    <span class="stats-number">+10.000</span>
+                    <span class="stats-label">Personas formadas</span>
+                </div>
+                
+                <div class="stats">
+                    <span class="stats-number">+2.000</span>
+                    <span class="stats-label">Especializadas en IA</span>
+                </div>
             </div>
-        </div>
     </section>
 
    <!-- ABOUT -->
@@ -589,7 +603,7 @@
                         Soy consultor especializado en <span class="about-highlight">Inteligencia Artificial aplicada a empresa</span>, con una misión clara: ayudar a profesionales y organizaciones a aprovechar el potencial de la IA para transformar su forma de trabajar.
                     </p>
                     <p>
-                        Con más de <span class="about-highlight">10.000 personas formadas</span>, he desarrollado programas de capacitación y consultoría para autónomos, pymes y grandes empresas, adaptando cada solución a las necesidades específicas de cada cliente.
+                        Con más de <span class="about-highlight">10.000 personas formadas</span> a lo largo de mi carrera profesional, de las cuales <span class="about-highlight">más de 2.000 se han especializado en Inteligencia Artificial</span>, he desarrollado programas de capacitación y consultoría para autónomos, pymes y grandes empresas, adaptando cada solución a las necesidades específicas de cada cliente.
                     </p>
                     <p>
                         Mi enfoque combina conocimiento técnico con aplicación práctica, transformando conceptos complejos en un lenguaje accesible y ameno. Garantizo que cada formación o auditoría se traduzca en resultados medibles y mejoras reales en productividad y eficiencia.
@@ -757,6 +771,7 @@
 </body>
 
 </html>
+
 
 
 
