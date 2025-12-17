@@ -255,6 +255,55 @@
             object-fit: contain;
         }
 
+        /* TESTIMONIALS SECTION */
+        .testimonials {
+            padding: 5rem 2rem;
+            background-color: #fff;
+        }
+
+        .testimonials-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .testimonials-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            padding: 2.5rem;
+            background-color: #fafaf8;
+            border-radius: 12px;
+            border-left: 4px solid #c4a574;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #2c2c2c;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-author {
+            text-align: right;
+        }
+
+        .author-name {
+            font-weight: 600;
+            color: #2c2c2c;
+            margin-bottom: 0.3rem;
+        }
+
+        .author-title {
+            color: #6b6b6b;
+            font-size: 0.9rem;
+        }
+
         /* ABOUT SECTION */
         .about {
             padding: 5rem 2rem;
@@ -516,6 +565,18 @@
                 gap: 2rem;
             }
 
+            .testimonials {
+                padding: 3rem 1.5rem;
+            }
+
+            .testimonial-card {
+                padding: 1.5rem;
+            }
+
+            .testimonial-text {
+                font-size: 1rem;
+            }
+
             .experience {
                 padding: 3rem 1.5rem;
             }
@@ -680,6 +741,25 @@
         </div>
     </section>
 
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <h2 class="section-title">Lo que dicen mis clientes</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Aitor transformó la forma de trabajar de nuestro equipo de redacción. Gracias a su implementación de IA, hemos reducido un 30% el tiempo de creación de noticias sin sacrificar calidad. Su enfoque práctico hizo que todo el equipo adoptara la tecnología con confianza."
+                    </p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Ignasi de Planel</p>
+                        <p class="author-title">Director en Diario d'Andorra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
    <!-- EXPERIENCE -->
     <section class="experience">
         <div class="experience-container">
@@ -771,6 +851,7 @@
 </body>
 
 </html>
+
 
 
 
